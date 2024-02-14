@@ -1,4 +1,15 @@
 {
-  "channel1": "http://38.96.178.201/live/TSports/index.m3u8",
-  "channel2": "http://tv.freeiptv25.work.gd/live/channel2.m3u8"
+  "id1": "http://103.142.80.22:8080/Channel-1/index.m3u8",
+  "id2": "http://38.96.178.201/live/TSports/index.m3u8",
+  "id3": "https://prod-ec-us-east-1.video.pscp.tv/Transcoding/v1/hls/CMA7lXPrynca3eCRUg-38JinRMWyS10lBMkUHMfS4p31h55auIJrY9zyV19VJGGrRjPLcCC9n6ifoOznqVDt5A/non_transcode/us-east-1/periscope-replay-direct-prod-us-east-1-public/master_dynamic_highlatency.m3u8?type=live",
+  "channel2": "",
+  "channel2": "",
+  "channel2": "",
+  "channel2": "",
+  "channel2": "",
+  "channel2": "",
+  "channel2": "",
+  "channel2": "",
+  "channel2": "",
+  "channel2": ""
 }

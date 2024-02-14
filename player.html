@@ -38,8 +38,8 @@
             .then(response => response.json())
             .then(channels => {
                 const urlParams = new URLSearchParams(window.location.search);
-                const channelName = urlParams.get('tv');
-                const tvSource = channels[channelName];
+                const channelId = urlParams.get('tv');
+                const tvSource = channels[channelId];
                 if (tvSource) {
                     var player = new Clappr.Player({
                         source: tvSource,

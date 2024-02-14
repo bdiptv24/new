@@ -1,7 +1,7 @@
 {
   "channel1": "http://103.142.80.22:8080/Channel-1/index.m3u8",
   "channel2": "http://38.96.178.201/live/TSports/index.m3u8",
-  "channel3": "https://prod-ec-us-east-1.video.pscp.tv/Transcoding/v1/hls/CMA7lXPrynca3eCRUg-38JinRMWyS10lBMkUHMfS4p31h55auIJrY9zyV19VJGGrRjPLcCC9n6ifoOznqVDt5A/non_transcode/us-east-1/periscope-replay-direct-prod-us-east-1-public/master_dynamic_highlatency.m3u8?type=live",
+  "channel3": "https://cdn-tv.co.in/myweb/watch.php?id=1000009277&e=.m3u8",
   "channel4": "",
   "channel5": "",
   "channel6": "",

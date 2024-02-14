@@ -17,16 +17,6 @@
             left: 0;
             background-color: black;
         }
-        .dvr-player-wrapper {
-            background-color: black;
-        }
-        [data-watermark] {
-            min-width: 100px !important;
-            max-width: 350px !important;
-            width: 70% !important;
-            top: 45px !important;
-            right: -70px !important;
-        }
     </style>
 </head>
 <body>
@@ -42,25 +32,14 @@
         if (tvId) {
             // Fetch channels from JSON file
             fetch('channels.json') // Update with your JSON file path
-                .then(response => {
-                    if (!response.ok) {
-                        throw new Error(`HTTP error! Status: ${response.status}`);
-                    }
-                    return response.json();
-                })
+                .then(response => response.json())
                 .then(data => {
                     const channel = data.channels.find(c => c.id == tvId);
                     if (channel) {
-                        var player = new Clappr.Player({
-                            source: channel.source,
-                            parentId: '#live-player',
-                            width: '100%',
-                            height: '100%',
-                            autoPlayVisibleOnly: 'partial',
-                            watermark: 'https://i.ibb.co/VMwb7DY/20231223-092825-0000.png',
-                            position: 'top-right',
-                            autoPlay: true,
-                        });
+                        console.log("Channel Source:", channel.source); // Log the channel source to the console
+                        // Try creating a simple div element with the channel source
+                        const playerContainer = document.getElementById('live-player');
+                        playerContainer.innerHTML = `<video controls width="100%" height="100%"><source src="${channel.source}" type="application/x-mpegURL"></video>`;
                     } else {
                         console.error("Channel not found for the provided ID.");
                     }

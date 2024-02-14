@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="robots" content="noindex,nofollow">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Player</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/clappr/latest/clappr.css">
+    <script src="https://cdn.jsdelivr.net/clappr/latest/clappr.min.js"></script>
+    <style type="text/css" media="screen" charset="utf-8">
+        #live-player {
+            position: fixed !important;
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background-color: black;
+        }
+        .dvr-player-wrapper {
+            background-color: black;
+        }
+        [data-watermark] {
+            min-width: 100px !important;
+            max-width: 350px !important;
+            width: 70% !important;
+            top: 45px !important;
+            right: -70px !important;
+        }
+    </style>
+</head>
+<body>
+
+<div id="live-player"></div>
+
+<script type="text/javascript">
+    window.onload = function () {
+        // Extract the TV ID from the URL parameter
+        const urlParams = new URLSearchParams(window.location.search);
+        const tvId = urlParams.get('id');
+
+        if (tvId) {
+            // Fetch channels from JSON file
+            fetch('channels.json') // Update with your JSON file path
+                .then(response => response.json())
+                .then(data => {
+                    const channel = data.channels.find(c => c.id == tvId);
+                    if (channel) {
+                        var player = new Clappr.Player({
+                            source: channel.source,
+                            parentId: '#live-player',
+                            width: '100%',
+                            height: '100%',
+                            autoPlayVisibleOnly: 'partial',
+                            watermark: 'https://i.ibb.co/VMwb7DY/20231223-092825-0000.png',
+                            position: 'top-right',
+                            autoPlay: true,
+                        });
+                    } else {
+                        console.error("Channel not found for the provided ID.");
+                    }
+                })
+                .catch(error => console.error("Error fetching JSON:", error));
+        } else {
+            console.error("TV ID not provided in the URL parameters.");
+        }
+    }
+</script>
+
+</body>
+</html>

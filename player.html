@@ -31,7 +31,7 @@
 
         if (tvId) {
             // Fetch channels from JSON file
-            fetch('channels.json') // Update with your JSON file path
+            fetch('/channels.json') // Update with your JSON file path
                 .then(response => response.json())
                 .then(data => {
                     const channel = data.channels.find(c => c.id == tvId);

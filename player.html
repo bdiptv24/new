@@ -5,10 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Live Player</title>
+    <!-- Add the Clappr CSS and JS links -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/clappr/latest/clappr.css">
     <script src="https://cdn.jsdelivr.net/clappr/latest/clappr.min.js"></script>
-    <!-- Include the quality selector plugin script -->
-    <script src="https://cdn.jsdelivr.net/clappr.quality-selector/latest/clappr-quality-selector.min.js"></script>
     <style type="text/css" media="screen" charset="utf-8">
         #live-player {
             position: fixed !important;
@@ -23,11 +22,11 @@
             background-color: black;
         }
         [data-watermark] {
-            min-width: 100px !important; /* Adjust the minimum width */
-            max-width: 350px !important; /* Adjust the maximum width */
-            width: 70% !important; /* Adjust the width percentage */
-            top: 45px !important; /* Adjust the top position */
-            right: -70px !important; /* Adjust the right position */
+            min-width: 100px !important;
+            max-width: 350px !important;
+            width: 70% !important;
+            top: 45px !important;
+            right: -70px !important;
         }
     </style>
 </head>
@@ -47,14 +46,10 @@
                         parentId: '#live-player',
                         width: '100%',
                         height: '100%',
-                        autoPlayVisibleOnly: 'partial', // Corrected property name
+                        autoPlayVisibleOnly: 'partial',
                         watermark: 'https://i.ibb.co/VMwb7DY/20231223-092825-0000.png',
                         position: 'top-right',
                         autoPlay: true,
-                        // Add the quality selector plugin
-                        plugins: [
-                            ClapprQualitySelectorPlugin
-                        ]
                     });
                 } else {
                     console.error("TV source not provided in the URL parameters or invalid channel name.");

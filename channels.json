@@ -1,5 +1,5 @@
 {
-  "channel1": "https://prod-sports-eng-gm.jiocinema.com/hls/live/2100297/hd_akamai_iosmob_avc_eng_indvseng_test03day03170224/master.m3u8",
+  "channel1": "https://prod-ent-live-gm.jiocinema.com/hls/live/2100297/hd_akamai_iosmob_avc_eng_indvseng_test03day03170224/master.m3u8",
   "channel2": "http://muka03.wanicelife.com:8880/live/12mmk180112/57484725/2120.m3u8",
   "channel3": "http://103.142.80.22:8080/GAZI/index.m3u8",
   "channel4": "http://103.142.80.22:8080/Channel-2/index.m3u8",

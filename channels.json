@@ -1,6 +1,6 @@
 {
   "channel1": "https://sports.yunyingtiandi.com/live/m33051402/playlist.m3u8",
-  "channel2": "https://corsproxy.io/?https%3A%2F%2Fprod-ec-us-east-1.video.pscp.tv%2FTranscoding%2Fv1%2Fhls%2FQXB_a0na8g_o86juUunnSeMxhVsDk91ZVcvT_Gdz5ILBuYJUXkC9c8tNmybVMj3SSJbXXpBDv3NOq8NICo974w%2Fnon_transcode%2Fus-east-1%2Fperiscope-replay-direct-prod-us-east-1-public%2Fmaster_dynamic_delta.m3u8%3Ftype%3Dlive",
+  "channel2": "https://prod-ec-us-east-1.video.pscp.tv/Transcoding/v1/hls/QXB_a0na8g_o86juUunnSeMxhVsDk91ZVcvT_Gdz5ILBuYJUXkC9c8tNmybVMj3SSJbXXpBDv3NOq8NICo974w/non_transcode/us-east-1/periscope-replay-direct-prod-us-east-1-public/master_dynamic_delta.m3u8?type=live",
   "channel3": "http://103.142.80.22:8080/GAZI/index.m3u8",
   "channel4": "http://103.142.80.22:8080/Channel-2/index.m3u8",
   "channel5": "https://tencentscdn2.tamashaweb.com/v1/018ad584681c09831f17035dc819/018ad58586961eb401a60363c44c/main.m3u8?uuid=FFAAFFFF-6117-35e6-ff51-b91bc2f55d44",

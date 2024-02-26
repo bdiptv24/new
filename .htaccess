@@ -1,0 +1,18 @@
+<Files "index.html">
+    Order Allow,Deny
+    Deny from all
+    ErrorDocument 403 "Access Denied"
+</Files>
+
+<Files "/player.html">
+    Order Allow,Deny
+    Deny from all
+    ErrorDocument 403 "Access Denied"
+</Files>
+
+
+<Files "player2.html">
+    Order Allow,Deny
+    Deny from all
+    ErrorDocument 403 "Access Denied"
+</Files>

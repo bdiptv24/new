@@ -36,34 +36,39 @@
 <body>
     <div id="live-player"></div>
     <script type="text/javascript">
-        if (window.self !== window.top) {
-            window.onload = function () {
-                fetch('channels.json')
-                .then(response => response.json())
-                .then(channels => {
-                    const urlParams = new URLSearchParams(window.location.search);
-                    const channelName = urlParams.get('tv');
-                    const tvSource = channels[channelName];
-                    if (tvSource) {
-                        var player = new Clappr.Player({
-                            source: tvSource,
-                            parentId: '#live-player',
-                            width: '100%',
-                            height: '100%',
-                            autoPlayVisibleOnly: 'partial',
-                            watermark: 'https://i.ibb.co/VMwb7DY/20231223-092825-0000.png',
-                            position: 'top-right',
-                            autoPlay: true,
-                            plugins: [HlsjsPlayback, LevelSelector],
-                        });
-                    } else {
-                        console.error("TV source not provided in the URL parameters or invalid channel name.");
-                    }
-                })
-                .catch(error => console.error('Error fetching channels:', error));
-            }
-        } else {
-            document.body.innerHTML = "<h1>Access Denied</h1>";
+        window.onload = function () {
+            fetch('channels.json')
+            .then(response => response.json())
+            .then(config => {
+                const urlParams = new URLSearchParams(window.location.search);
+                const channelName = urlParams.get('tv');
+                const channel = config.channels.find(c => c.name === channelName);
+
+                if (channel) {
+                    var player = new Clappr.Player({
+                        source: channel.url,
+                        parentId: '#live-player',
+                        width: '100%',
+                        height: '100%',
+                        autoPlayVisibleOnly: 'partial',
+                        watermark: channel.logo,
+                        position: 'top-right',
+                        autoPlay: true,
+                        plugins: [HlsjsPlayback, LevelSelector],
+                        playback: {
+                            hlsjsConfig: {
+                                xhrSetup: function(xhr, url) {
+                                    xhr.setRequestHeader('Referer', channel.referrer);
+                                    xhr.setRequestHeader('User-Agent', channel.userAgent);
+                                }
+                            }
+                        }
+                    });
+                } else {
+                    console.error("Channel not found in the configuration or invalid channel name.");
+                }
+            })
+            .catch(error => console.error('Error fetching channels configuration:', error));
         }
     </script>
 </body>

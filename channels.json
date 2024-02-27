@@ -1,5 +1,5 @@
 {
-  "channel1": "https://sports.yunyingtiandi.com/live/m33051402/playlist.m3u8",
+  "channel1": "https://prim24banandneppsl.akamaized.net/hls/live/2110098/pslbangla/master.m3u8?hdnts=exp=1709049481~acl=/hls/*~hmac=8a9cc9db30263e6c94a4b1d1a0c873a5fa8a09e64388669ab816e7fd50aeb2cc",
   "channel2": "http://tvcdn.hoichoi24.com:8083/1102/tracks-v1a1/mono.m3u8?token=1c634cc9b9e96cecbfba767a2593a88a921bc633-c97e695da3876569aa3dfc26cfbc0956-1708963279-1708959679",
   "channel3": "http://103.142.80.22:8080/GAZI/index.m3u8",
   "channel4": "http://103.142.80.22:8080/Channel-2/index.m3u8",

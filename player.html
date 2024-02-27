@@ -37,38 +37,40 @@
     <div id="live-player"></div>
     <script type="text/javascript">
         window.onload = function () {
-            fetch('channels.json')
-            .then(response => response.json())
-            .then(config => {
-                const urlParams = new URLSearchParams(window.location.search);
-                const channelName = urlParams.get('tv');
-                const channel = config.channels.find(c => c.name === channelName);
+            if (window.self === window.top) {
+                fetch('channels.json')
+                .then(response => response.json())
+                .then(config => {
+                    const urlParams = new URLSearchParams(window.location.search);
+                    const channelName = urlParams.get('tv');
+                    const channel = config.channels.find(c => c.name === channelName);
 
-                if (channel) {
-                    var player = new Clappr.Player({
-                        source: channel.url,
-                        parentId: '#live-player',
-                        width: '100%',
-                        height: '100%',
-                        autoPlayVisibleOnly: 'partial',
-                        watermark: channel.logo,
-                        position: 'top-right',
-                        autoPlay: true,
-                        plugins: [HlsjsPlayback, LevelSelector],
-                        playback: {
-                            hlsjsConfig: {
-                                xhrSetup: function(xhr, url) {
-                                    xhr.setRequestHeader('Referer', channel.referrer);
-                                    xhr.setRequestHeader('User-Agent', channel.userAgent);
+                    if (channel) {
+                        var player = new Clappr.Player({
+                            source: channel.url,
+                            parentId: '#live-player',
+                            width: '100%',
+                            height: '100%',
+                            autoPlayVisibleOnly: 'partial',
+                            watermark: channel.logo,
+                            position: 'top-right',
+                            autoPlay: true,
+                            plugins: [HlsjsPlayback, LevelSelector],
+                            playback: {
+                                hlsjsConfig: {
+                                    xhrSetup: function(xhr, url) {
+                                        xhr.setRequestHeader('Referer', channel.referrer);
+                                        xhr.setRequestHeader('User-Agent', channel.userAgent);
+                                    }
                                 }
                             }
-                        }
-                    });
-                } else {
-                    console.error("Channel not found in the configuration or invalid channel name.");
-                }
-            })
-            .catch(error => console.error('Error fetching channels configuration:', error));
+                        });
+                    } else {
+                        console.error("Channel not found in the configuration or invalid channel name.");
+                    }
+                })
+                .catch(error => console.error('Error fetching channels configuration:', error));
+            }
         }
     </script>
 </body>

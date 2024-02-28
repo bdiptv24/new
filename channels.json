@@ -2,7 +2,7 @@
   "channel1": "https://sports.yunyingtiandi.com/live/m33058771/playlist.m3u8",
   "channel2": "http://tvcdn.hoichoi24.com:8083/1102/tracks-v1a1/mono.m3u8?token=d9f369cdffce93b93cfa73a95fe352e8978ed906-802f2a999f60f2b7a5c014fe8bf8688a-1709127812-1709124212",
   "channel3": "http://tvcdn.hoichoi24.com:8083/1507/tracks-v1a1/mono.m3u8?token=fb93ae266be08759c54bc56d711270eb38d70ad6-9ac97c9f4d67105d7118c70b9b91f28b-1709127804-1709124204",
-  "channel4": "http://103.142.80.22:8080/Channel-2/index.m3u8",
+  "channel4": "https://freeiptv25.netlify.app/live/stream_8.m3u8",
   "channel5": "https://tencentscdn2.tamashaweb.com/v1/018ad584681c09831f17035dc819/018ad58586961eb401a60363c44c/main.m3u8?uuid=FFAAFFFF-6117-35e6-ff51-b91bc2f55d44",
   "channel6": "http://103.2.153.38/trans1sd/smil:tensports5.smil/chunklist.m3u8",
   "channel7": "https://corsproxy.io/?http://tgaadi-web.tech/play.php?id=18468&e=.m3u8",

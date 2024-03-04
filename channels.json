@@ -1,7 +1,7 @@
 {
   "channel1": "http://213.13.16.138/shls/LIVE$SPORTTV2_HD/index.m3u8?device=TVOS_Live&start=LIVE&end=END",
-  "channel2": "https://sportsleading.online/live/stream_f1.m3u8",
-  "channel3": "https://cdn-apse1-prod.tsv2.amagi.tv/linear/amg01448-samsungin-eurosportin-samsungin/playlist.m3u8",
+  "channel2": "https://catowrap.live/mrgamingbtsport2.m3u8",
+  "channel3": "https://catowrap.live/mrgamingbtsport1.m3u8",
   "channel4": "http://176.119.29.52/live/00:1A:79:17:BD:79/8B83484C00326/48010.m3u8",
   "channel5": "http://213.13.16.138/shls/LIVE$SPORTTV_HD/index.m3u8?device=TVOS_Live&start=LIVE&end=END",
   "channel6": "http://103.2.153.38/trans1sd/smil:tensports5.smil/chunklist.m3u8",

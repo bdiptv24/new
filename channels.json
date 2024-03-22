@@ -1,6 +1,6 @@
 {
-  "channel1": "https://livecdn2.thepapare.com/out/v1/6d148fcdcc854ccb907b796f7641b5a4/index.m3u8",
-  "channel2": "http://tvcdn.hoichoi24.com:8083/1102/tracks-v1a1/mono.m3u8?token=74bee0ce6e39c1a6a824b51e5b21b2a48e16fc22-b30c89d8a816b505cf89c3b4d9876e84-1710494089-1710490489",
+  "channel1": "https://prod-ent-live-gm.jiocinema.com/hls/live/2100299/hd_akamai_androidmob_avc_eng_ipl_s1_m1220324/master.m3u8,
+  "channel2": "https://prod-ent-live-gm.jiocinema.com/hls/live/2100323/hd_akamai_androidmob_avc_hin_ipl_s1_m1220324/master.m3u8",
   "channel3": "https://catowrap.live/mrgamingbtsport1.m3u8",
   "channel4": "http://176.119.29.52/live/00:1A:79:17:BD:79/8B83484C00326/48010.m3u8",
   "channel5": "http://213.13.16.138/shls/LIVE$SPORTTV_HD/index.m3u8?device=TVOS_Live&start=LIVE&end=END",

@@ -5,8 +5,8 @@
   "channel4": "https://prod-ent-live-gm.jiocinema.com/hls/live/2109712/hd_akamai_iosmob_avc_tam_ipl_s1_m1220324/master.m3u8",
   "channel5": "https://prod-ent-live-gm.jiocinema.com/hls/live/2109724/hd_akamai_iosmob_avc_kan_ipl_s1_m1220324/master.m3u8",
   "channel6": "https://prod-ent-live-gm.jiocinema.com/hls/live/2109762/hd_akamai_iosmob_avc_bhoj_ipl_s1_m1220324/master.m3u8",
-  "channel7": "https://corsproxy.io/?https://nayeem-parvez.pw/api-s1b/iptv/hoichoi.m3u8?id=1101&e=.m3u8",
-  "channel8": "https://corsproxy.io/?https://nayeem-parvez.pw/api-s1b/iptv/hoichoi.m3u8?id=1102&e=.m3u8",
- "channel9": "https://corsproxy.io/?http://tgaadi-web.tech/play.php?id=23937&e=.m3u8",
+  "channel7": "https://prod-ent-live-gm.jiocinema.com/hls/live/2109756/hd_akamai_iosmob_avc_pun_ipl_s1_m1220324/master.m3u8",
+  "channel8": "https://prod-ent-live-gm.jiocinema.com/hls/live/2109750/hd_akamai_iosmob_avc_guj_ipl_s1_m1220324/master.m3u8",
+ "channel9": "https://prod-ent-live-gm.jiocinema.com/hls/live/2109706/hd_akamai_iosmob_avc_mal_ipl_s1_m1220324/master.m3u8",
 "channel10": "https://corsproxy.io/?https://testing.denver1769.in/Ply/tptv.php?id=11662&e=.m3u8"
 }
